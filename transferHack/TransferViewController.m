@@ -33,6 +33,8 @@ static NSString *ACCell = @"ACCell";
      // Configure Collection View
     [self.collectionView setBackgroundColor:[UIColor clearColor]];
     [self.collectionView registerClass:[AccountCell class] forCellWithReuseIdentifier:ACCell];
+    [self.topCollectionView setBackgroundColor:[UIColor clearColor]];
+    [self.topCollectionView registerClass:[AccountCell class] forCellWithReuseIdentifier:ACCell];
     
 }
 
@@ -59,8 +61,6 @@ static NSString *ACCell = @"ACCell";
     [cell.creditCard setText:@"...8523"];
     [cell.accountAmount setText:@"$300.00"];
     
-    
-    
     return cell;
     
 }
@@ -71,5 +71,8 @@ static NSString *ACCell = @"ACCell";
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(0.0, 10.0, 0.0, 10.0);
 }
+
+
+
 
 @end
