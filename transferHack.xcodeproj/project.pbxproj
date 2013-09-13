@@ -20,6 +20,11 @@
 		888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888E199317E3587F00FDBF62 /* TransferViewController.xib */; };
 		888E199817E3613500FDBF62 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199717E3613500FDBF62 /* AccountCell.m */; };
 		BF197FDA17E3759000B1A17E /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF197FD917E3759000B1A17E /* PaintingView.m */; };
+		BF197FDC17E3776800B1A17E /* ArrowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF197FDB17E3776800B1A17E /* ArrowView.xib */; };
+		BF197FDF17E37B3A00B1A17E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FDD17E37B3A00B1A17E /* GLKit.framework */; };
+		BF197FE017E37B3A00B1A17E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FDE17E37B3A00B1A17E /* OpenGLES.framework */; };
+		BF197FE217E37B8000B1A17E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FE117E37B8000B1A17E /* QuartzCore.framework */; };
+		BF197FE417E37B8800B1A17E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FE317E37B8800B1A17E /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,11 @@
 		888E199717E3613500FDBF62 /* AccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
 		BF197FD817E3759000B1A17E /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingView.h; sourceTree = "<group>"; };
 		BF197FD917E3759000B1A17E /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
+		BF197FDB17E3776800B1A17E /* ArrowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrowView.xib; sourceTree = "<group>"; };
+		BF197FDD17E37B3A00B1A17E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BF197FDE17E37B3A00B1A17E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BF197FE117E37B8000B1A17E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF197FE317E37B8800B1A17E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +60,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF197FE417E37B8800B1A17E /* AudioToolbox.framework in Frameworks */,
+				BF197FE217E37B8000B1A17E /* QuartzCore.framework in Frameworks */,
+				BF197FDF17E37B3A00B1A17E /* GLKit.framework in Frameworks */,
+				BF197FE017E37B3A00B1A17E /* OpenGLES.framework in Frameworks */,
 				885FEEC917E3551500B80413 /* UIKit.framework in Frameworks */,
 				885FEECB17E3551500B80413 /* Foundation.framework in Frameworks */,
 				885FEECD17E3551500B80413 /* CoreGraphics.framework in Frameworks */,
@@ -81,6 +95,10 @@
 		885FEEC717E3551500B80413 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF197FE317E37B8800B1A17E /* AudioToolbox.framework */,
+				BF197FE117E37B8000B1A17E /* QuartzCore.framework */,
+				BF197FDD17E37B3A00B1A17E /* GLKit.framework */,
+				BF197FDE17E37B3A00B1A17E /* OpenGLES.framework */,
 				885FEEC817E3551500B80413 /* UIKit.framework */,
 				885FEECA17E3551500B80413 /* Foundation.framework */,
 				885FEECC17E3551500B80413 /* CoreGraphics.framework */,
@@ -99,6 +117,7 @@
 				888E199317E3587F00FDBF62 /* TransferViewController.xib */,
 				885FEED817E3551500B80413 /* AppDelegate.m */,
 				885FEECF17E3551500B80413 /* Supporting Files */,
+				BF197FDB17E3776800B1A17E /* ArrowView.xib */,
 			);
 			path = transferHack;
 			sourceTree = "<group>";
@@ -173,6 +192,7 @@
 				885FEEDD17E3551500B80413 /* Default@2x.png in Resources */,
 				885FEEDF17E3551500B80413 /* Default-568h@2x.png in Resources */,
 				888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */,
+				BF197FDC17E3776800B1A17E /* ArrowView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
