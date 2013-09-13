@@ -9,6 +9,7 @@
 #import "TransferViewController.h"
 #import "AccountCell.h"
 
+
 @interface TransferViewController ()
 
 @end
@@ -53,6 +54,7 @@ static NSString *ACCell = @"ACCell";
     return 1;
 }
 
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     AccountCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ACCell forIndexPath:indexPath];
     
@@ -65,15 +67,32 @@ static NSString *ACCell = @"ACCell";
     
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"didselect");
+    [[collectionView cellForItemAtIndexPath:indexPath] setBackgroundColor:[UIColor blueColor]];
+    [[collectionView cellForItemAtIndexPath:indexPath].backgroundView setTag:1];
+ 
+}
+
+-(void) moveImage
+{
+ 
+    
+}
+
+-(void)collectionView:(UICollectionView *)collectionView diddeSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"didselect");
+}
+
+
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return CGSizeMake(233,203);
 }
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(0.0, 10.0, 0.0, 10.0);
 }
-
-
-
 
 
 
