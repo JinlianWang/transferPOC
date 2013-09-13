@@ -7,7 +7,16 @@
 //
 
 #import "UIView+ImageCopy.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation UIView (ImageCopy)
-
+-(UIImage *)bnrImageContents
+{
+    CGSize mySize = self.bounds.size;
+    UIGraphicsBeginImageContext(mySize);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
 @end
