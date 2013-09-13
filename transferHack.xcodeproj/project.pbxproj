@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		885FEEC917E3551500B80413 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885FEEC817E3551500B80413 /* UIKit.framework */; };
+		885FEECB17E3551500B80413 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885FEECA17E3551500B80413 /* Foundation.framework */; };
+		885FEECD17E3551500B80413 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 885FEECC17E3551500B80413 /* CoreGraphics.framework */; };
+		885FEED317E3551500B80413 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 885FEED117E3551500B80413 /* InfoPlist.strings */; };
+		885FEED517E3551500B80413 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FEED417E3551500B80413 /* main.m */; };
+		885FEED917E3551500B80413 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FEED817E3551500B80413 /* AppDelegate.m */; };
+		885FEEDB17E3551500B80413 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 885FEEDA17E3551500B80413 /* Default.png */; };
+		885FEEDD17E3551500B80413 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885FEEDC17E3551500B80413 /* Default@2x.png */; };
+		885FEEDF17E3551500B80413 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885FEEDE17E3551500B80413 /* Default-568h@2x.png */; };
+		888E199417E3587F00FDBF62 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199217E3587F00FDBF62 /* TransferViewController.m */; };
+		888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888E199317E3587F00FDBF62 /* TransferViewController.xib */; };
+		888E199817E3613500FDBF62 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199717E3613500FDBF62 /* AccountCell.m */; };
+		888E19CC17E388E000FDBF62 /* account-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19CA17E388E000FDBF62 /* account-bg@2x.png */; };
+		888E19CD17E388E000FDBF62 /* account-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19CB17E388E000FDBF62 /* account-bg.png */; };
+		888E19CF17E3907500FDBF62 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19CE17E3907500FDBF62 /* bg@2x.png */; };
+		BF197FDA17E3759000B1A17E /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF197FD917E3759000B1A17E /* PaintingView.m */; };
+		BF197FDC17E3776800B1A17E /* ArrowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF197FDB17E3776800B1A17E /* ArrowView.xib */; };
+		BF197FDF17E37B3A00B1A17E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FDD17E37B3A00B1A17E /* GLKit.framework */; };
+		BF197FE017E37B3A00B1A17E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FDE17E37B3A00B1A17E /* OpenGLES.framework */; };
+		BF197FE217E37B8000B1A17E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FE117E37B8000B1A17E /* QuartzCore.framework */; };
+		BF197FE417E37B8800B1A17E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FE317E37B8800B1A17E /* AudioToolbox.framework */; };
+		BF197FEA17E3A3E700B1A17E /* UIView+ImageCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF197FE917E3A3E700B1A17E /* UIView+ImageCopy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		885FEEC517E3551500B80413 /* transferHack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = transferHack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		885FEEC817E3551500B80413 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		885FEECA17E3551500B80413 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		885FEECC17E3551500B80413 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		885FEED017E3551500B80413 /* transferHack-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "transferHack-Info.plist"; sourceTree = "<group>"; };
+		885FEED217E3551500B80413 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		885FEED417E3551500B80413 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		885FEED617E3551500B80413 /* transferHack-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "transferHack-Prefix.pch"; sourceTree = "<group>"; };
+		885FEED717E3551500B80413 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		885FEED817E3551500B80413 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		885FEEDA17E3551500B80413 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		885FEEDC17E3551500B80413 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		885FEEDE17E3551500B80413 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		888E199117E3587F00FDBF62 /* TransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
+		888E199217E3587F00FDBF62 /* TransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
+		888E199317E3587F00FDBF62 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		888E199617E3613500FDBF62 /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
+		888E199717E3613500FDBF62 /* AccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
+		888E19CA17E388E000FDBF62 /* account-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account-bg@2x.png"; sourceTree = "<group>"; };
+		888E19CB17E388E000FDBF62 /* account-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account-bg.png"; sourceTree = "<group>"; };
+		888E19CE17E3907500FDBF62 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		BF197FD817E3759000B1A17E /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingView.h; sourceTree = "<group>"; };
+		BF197FD917E3759000B1A17E /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
+		BF197FDB17E3776800B1A17E /* ArrowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrowView.xib; sourceTree = "<group>"; };
+		BF197FDD17E37B3A00B1A17E /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		BF197FDE17E37B3A00B1A17E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		BF197FE117E37B8000B1A17E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF197FE317E37B8800B1A17E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BF197FE817E3A3E700B1A17E /* UIView+ImageCopy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+ImageCopy.h"; path = "transferHack/UIView+ImageCopy.h"; sourceTree = "<group>"; };
+		BF197FE917E3A3E700B1A17E /* UIView+ImageCopy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+ImageCopy.m"; path = "transferHack/UIView+ImageCopy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		885FEEC217E3551500B80413 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF197FE417E37B8800B1A17E /* AudioToolbox.framework in Frameworks */,
+				BF197FE217E37B8000B1A17E /* QuartzCore.framework in Frameworks */,
+				BF197FDF17E37B3A00B1A17E /* GLKit.framework in Frameworks */,
+				BF197FE017E37B3A00B1A17E /* OpenGLES.framework in Frameworks */,
+				885FEEC917E3551500B80413 /* UIKit.framework in Frameworks */,
+				885FEECB17E3551500B80413 /* Foundation.framework in Frameworks */,
+				885FEECD17E3551500B80413 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		885FEEBC17E3551500B80413 = {
+			isa = PBXGroup;
+			children = (
+				BF197FE817E3A3E700B1A17E /* UIView+ImageCopy.h */,
+				BF197FE917E3A3E700B1A17E /* UIView+ImageCopy.m */,
+				BF197FD817E3759000B1A17E /* PaintingView.h */,
+				BF197FD917E3759000B1A17E /* PaintingView.m */,
+				885FEECE17E3551500B80413 /* transferHack */,
+				885FEEC717E3551500B80413 /* Frameworks */,
+				885FEEC617E3551500B80413 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		885FEEC617E3551500B80413 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				885FEEC517E3551500B80413 /* transferHack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		885FEEC717E3551500B80413 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF197FE317E37B8800B1A17E /* AudioToolbox.framework */,
+				BF197FE117E37B8000B1A17E /* QuartzCore.framework */,
+				BF197FDD17E37B3A00B1A17E /* GLKit.framework */,
+				BF197FDE17E37B3A00B1A17E /* OpenGLES.framework */,
+				885FEEC817E3551500B80413 /* UIKit.framework */,
+				885FEECA17E3551500B80413 /* Foundation.framework */,
+				885FEECC17E3551500B80413 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		885FEECE17E3551500B80413 /* transferHack */ = {
+			isa = PBXGroup;
+			children = (
+				885FEED717E3551500B80413 /* AppDelegate.h */,
+				888E199117E3587F00FDBF62 /* TransferViewController.h */,
+				888E199217E3587F00FDBF62 /* TransferViewController.m */,
+				888E199617E3613500FDBF62 /* AccountCell.h */,
+				888E199717E3613500FDBF62 /* AccountCell.m */,
+				888E199317E3587F00FDBF62 /* TransferViewController.xib */,
+				885FEED817E3551500B80413 /* AppDelegate.m */,
+				885FEECF17E3551500B80413 /* Supporting Files */,
+				BF197FDB17E3776800B1A17E /* ArrowView.xib */,
+			);
+			path = transferHack;
+			sourceTree = "<group>";
+		};
+		885FEECF17E3551500B80413 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				888E19CE17E3907500FDBF62 /* bg@2x.png */,
+				888E19CA17E388E000FDBF62 /* account-bg@2x.png */,
+				888E19CB17E388E000FDBF62 /* account-bg.png */,
+				885FEED017E3551500B80413 /* transferHack-Info.plist */,
+				885FEED117E3551500B80413 /* InfoPlist.strings */,
+				885FEED417E3551500B80413 /* main.m */,
+				885FEED617E3551500B80413 /* transferHack-Prefix.pch */,
+				885FEEDA17E3551500B80413 /* Default.png */,
+				885FEEDC17E3551500B80413 /* Default@2x.png */,
+				885FEEDE17E3551500B80413 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		885FEEC417E3551500B80413 /* transferHack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 885FEEE217E3551500B80413 /* Build configuration list for PBXNativeTarget "transferHack" */;
+			buildPhases = (
+				885FEEC117E3551500B80413 /* Sources */,
+				885FEEC217E3551500B80413 /* Frameworks */,
+				885FEEC317E3551500B80413 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = transferHack;
+			productName = transferHack;
+			productReference = 885FEEC517E3551500B80413 /* transferHack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		885FEEBD17E3551500B80413 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Capital One";
+			};
+			buildConfigurationList = 885FEEC017E3551500B80413 /* Build configuration list for PBXProject "transferHack" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 885FEEBC17E3551500B80413;
+			productRefGroup = 885FEEC617E3551500B80413 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				885FEEC417E3551500B80413 /* transferHack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		885FEEC317E3551500B80413 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885FEED317E3551500B80413 /* InfoPlist.strings in Resources */,
+				885FEEDB17E3551500B80413 /* Default.png in Resources */,
+				885FEEDD17E3551500B80413 /* Default@2x.png in Resources */,
+				885FEEDF17E3551500B80413 /* Default-568h@2x.png in Resources */,
+				888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */,
+				BF197FDC17E3776800B1A17E /* ArrowView.xib in Resources */,
+				888E19CC17E388E000FDBF62 /* account-bg@2x.png in Resources */,
+				888E19CD17E388E000FDBF62 /* account-bg.png in Resources */,
+				888E19CF17E3907500FDBF62 /* bg@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		885FEEC117E3551500B80413 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				885FEED517E3551500B80413 /* main.m in Sources */,
+				885FEED917E3551500B80413 /* AppDelegate.m in Sources */,
+				888E199417E3587F00FDBF62 /* TransferViewController.m in Sources */,
+				888E199817E3613500FDBF62 /* AccountCell.m in Sources */,
+				BF197FDA17E3759000B1A17E /* PaintingView.m in Sources */,
+				BF197FEA17E3A3E700B1A17E /* UIView+ImageCopy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		885FEED117E3551500B80413 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				885FEED217E3551500B80413 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		885FEEE017E3551500B80413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		885FEEE117E3551500B80413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		885FEEE317E3551500B80413 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "transferHack/transferHack-Prefix.pch";
+				INFOPLIST_FILE = "transferHack/transferHack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		885FEEE417E3551500B80413 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "transferHack/transferHack-Prefix.pch";
+				INFOPLIST_FILE = "transferHack/transferHack-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		885FEEC017E3551500B80413 /* Build configuration list for PBXProject "transferHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885FEEE017E3551500B80413 /* Debug */,
+				885FEEE117E3551500B80413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		885FEEE217E3551500B80413 /* Build configuration list for PBXNativeTarget "transferHack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				885FEEE317E3551500B80413 /* Debug */,
+				885FEEE417E3551500B80413 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 885FEEBD17E3551500B80413 /* Project object */;
+}
