@@ -19,6 +19,9 @@
 		888E199417E3587F00FDBF62 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199217E3587F00FDBF62 /* TransferViewController.m */; };
 		888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888E199317E3587F00FDBF62 /* TransferViewController.xib */; };
 		888E199817E3613500FDBF62 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199717E3613500FDBF62 /* AccountCell.m */; };
+		888E19CC17E388E000FDBF62 /* account-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19CA17E388E000FDBF62 /* account-bg@2x.png */; };
+		888E19CD17E388E000FDBF62 /* account-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19CB17E388E000FDBF62 /* account-bg.png */; };
+		888E19CF17E3907500FDBF62 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19CE17E3907500FDBF62 /* bg@2x.png */; };
 		BF197FDA17E3759000B1A17E /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF197FD917E3759000B1A17E /* PaintingView.m */; };
 		BF197FDC17E3776800B1A17E /* ArrowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF197FDB17E3776800B1A17E /* ArrowView.xib */; };
 		BF197FDF17E37B3A00B1A17E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FDD17E37B3A00B1A17E /* GLKit.framework */; };
@@ -46,6 +49,9 @@
 		888E199317E3587F00FDBF62 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 		888E199617E3613500FDBF62 /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
 		888E199717E3613500FDBF62 /* AccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
+		888E19CA17E388E000FDBF62 /* account-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account-bg@2x.png"; sourceTree = "<group>"; };
+		888E19CB17E388E000FDBF62 /* account-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account-bg.png"; sourceTree = "<group>"; };
+		888E19CE17E3907500FDBF62 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
 		BF197FD817E3759000B1A17E /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingView.h; sourceTree = "<group>"; };
 		BF197FD917E3759000B1A17E /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
 		BF197FDB17E3776800B1A17E /* ArrowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrowView.xib; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 		885FEECF17E3551500B80413 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				888E19CE17E3907500FDBF62 /* bg@2x.png */,
+				888E19CA17E388E000FDBF62 /* account-bg@2x.png */,
+				888E19CB17E388E000FDBF62 /* account-bg.png */,
 				885FEED017E3551500B80413 /* transferHack-Info.plist */,
 				885FEED117E3551500B80413 /* InfoPlist.strings */,
 				885FEED417E3551500B80413 /* main.m */,
@@ -193,6 +202,9 @@
 				885FEEDF17E3551500B80413 /* Default-568h@2x.png in Resources */,
 				888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */,
 				BF197FDC17E3776800B1A17E /* ArrowView.xib in Resources */,
+				888E19CC17E388E000FDBF62 /* account-bg@2x.png in Resources */,
+				888E19CD17E388E000FDBF62 /* account-bg.png in Resources */,
+				888E19CF17E3907500FDBF62 /* bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
