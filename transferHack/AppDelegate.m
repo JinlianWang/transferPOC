@@ -7,14 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "TransferViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    TransferViewController *transferViewController = [[TransferViewController alloc]initWithNibName:@"TransferViewController" bundle:nil];
+    
+
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+        [self.window setRootViewController:transferViewController];
     [self.window makeKeyAndVisible];
     return YES;
 }
