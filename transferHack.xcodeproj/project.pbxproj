@@ -19,6 +19,7 @@
 		888E199417E3587F00FDBF62 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199217E3587F00FDBF62 /* TransferViewController.m */; };
 		888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888E199317E3587F00FDBF62 /* TransferViewController.xib */; };
 		888E199817E3613500FDBF62 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199717E3613500FDBF62 /* AccountCell.m */; };
+		BF197FDA17E3759000B1A17E /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF197FD917E3759000B1A17E /* PaintingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		888E199317E3587F00FDBF62 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 		888E199617E3613500FDBF62 /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
 		888E199717E3613500FDBF62 /* AccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
+		BF197FD817E3759000B1A17E /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingView.h; sourceTree = "<group>"; };
+		BF197FD917E3759000B1A17E /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,8 @@
 		885FEEBC17E3551500B80413 = {
 			isa = PBXGroup;
 			children = (
+				BF197FD817E3759000B1A17E /* PaintingView.h */,
+				BF197FD917E3759000B1A17E /* PaintingView.m */,
 				885FEECE17E3551500B80413 /* transferHack */,
 				885FEEC717E3551500B80413 /* Frameworks */,
 				885FEEC617E3551500B80413 /* Products */,
@@ -182,6 +187,7 @@
 				885FEED917E3551500B80413 /* AppDelegate.m in Sources */,
 				888E199417E3587F00FDBF62 /* TransferViewController.m in Sources */,
 				888E199817E3613500FDBF62 /* AccountCell.m in Sources */,
+				BF197FDA17E3759000B1A17E /* PaintingView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
