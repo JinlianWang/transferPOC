@@ -52,9 +52,7 @@
 #import <GLKit/GLKit.h>
 
 #import "PaintingView.h"
-#import "shaderUtil.h"
-#import "fileUtil.h"
-#import "debug.h"
+
 
 //CONSTANTS:
 
@@ -159,7 +157,6 @@ typedef struct {
 		context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES2];
 		
 		if (!context || ![EAGLContext setCurrentContext:context]) {
-			[self release];
 			return nil;
 		}
         
@@ -194,7 +191,7 @@ typedef struct {
 	}
 }
 
-- (void)setupShaders
+/*- (void)setupShaders
 {
 	for (int i = 0; i < NUM_PROGRAMS; i++)
 	{
@@ -252,7 +249,7 @@ typedef struct {
     
     glError();
 }
-
+*/
 // Create a texture from an image
 - (textureInfo_t)textureFromName:(NSString *)name
 {
@@ -336,8 +333,6 @@ typedef struct {
     // Load the brush texture
     brushTexture = [self textureFromName:@"Particle.png"];
     
-    // Load shaders
-    [self setupShaders];
     
     // Enable blending and set a blending function appropriate for premultiplied alpha pixel data
     glEnable(GL_BLEND);
@@ -415,10 +410,7 @@ typedef struct {
     // tear down context
 	if ([EAGLContext currentContext] == context)
         [EAGLContext setCurrentContext:nil];
-	
-	[context release];
-    
-	[super dealloc];
+
 }
 
 // Erases the screen
