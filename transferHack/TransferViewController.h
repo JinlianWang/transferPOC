@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *topCollectionView;
 @property (strong, nonatomic) UIImageView *imageCel;
 @property (strong, nonatomic) UICollectionViewCell *topViewCell;
+@property (strong, nonatomic) UIImage *targetImage;
 @end

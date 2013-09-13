@@ -8,19 +8,24 @@
 
 #import "AppDelegate.h"
 #import "TransferViewController.h"
+#import "CustomGestureViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     TransferViewController *transferViewController = [[TransferViewController alloc]initWithNibName:@"TransferViewController" bundle:nil];
-    
+    CustomGestureViewController *controller = [[CustomGestureViewController alloc] init];
 
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:transferViewController];
+    navigationController.navigationBarHidden = YES;
+    self.navController = navigationController;
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
-        [self.window setRootViewController:transferViewController];
+        [self.window setRootViewController:navigationController];
+    [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

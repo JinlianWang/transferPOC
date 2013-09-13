@@ -22,6 +22,34 @@
 		888E19CC17E388E000FDBF62 /* account-bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19CA17E388E000FDBF62 /* account-bg@2x.png */; };
 		888E19CD17E388E000FDBF62 /* account-bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19CB17E388E000FDBF62 /* account-bg.png */; };
 		888E19CF17E3907500FDBF62 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19CE17E3907500FDBF62 /* bg@2x.png */; };
+		888E19F117E3BCB900FDBF62 /* CheckmarkGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E19D717E3BCB900FDBF62 /* CheckmarkGestureRecognizer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		888E19F217E3BCB900FDBF62 /* CustomGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E19D917E3BCB900FDBF62 /* CustomGestureViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		888E19F317E3BCB900FDBF62 /* CustomGestureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888E19DA17E3BCB900FDBF62 /* CustomGestureViewController.xib */; };
+		888E19F417E3BCB900FDBF62 /* amount-drop-box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19DC17E3BCB900FDBF62 /* amount-drop-box@2x.png */; };
+		888E19F517E3BCB900FDBF62 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19DD17E3BCB900FDBF62 /* bg.png */; };
+		888E19F617E3BCB900FDBF62 /* check1.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19DE17E3BCB900FDBF62 /* check1.png */; };
+		888E19F717E3BCB900FDBF62 /* check10.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19DF17E3BCB900FDBF62 /* check10.png */; };
+		888E19F817E3BCB900FDBF62 /* check11.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E017E3BCB900FDBF62 /* check11.png */; };
+		888E19F917E3BCB900FDBF62 /* check12.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E117E3BCB900FDBF62 /* check12.png */; };
+		888E19FA17E3BCB900FDBF62 /* check13.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E217E3BCB900FDBF62 /* check13.png */; };
+		888E19FB17E3BCB900FDBF62 /* check2.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E317E3BCB900FDBF62 /* check2.png */; };
+		888E19FC17E3BCB900FDBF62 /* check3.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E417E3BCB900FDBF62 /* check3.png */; };
+		888E19FD17E3BCB900FDBF62 /* check4.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E517E3BCB900FDBF62 /* check4.png */; };
+		888E19FE17E3BCB900FDBF62 /* check5.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E617E3BCB900FDBF62 /* check5.png */; };
+		888E19FF17E3BCB900FDBF62 /* check6.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E717E3BCB900FDBF62 /* check6.png */; };
+		888E1A0017E3BCB900FDBF62 /* check7.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E817E3BCB900FDBF62 /* check7.png */; };
+		888E1A0117E3BCB900FDBF62 /* check8.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19E917E3BCB900FDBF62 /* check8.png */; };
+		888E1A0217E3BCB900FDBF62 /* check9.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19EA17E3BCB900FDBF62 /* check9.png */; };
+		888E1A0317E3BCB900FDBF62 /* dots@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19EB17E3BCB900FDBF62 /* dots@2x.png */; };
+		888E1A0417E3BCB900FDBF62 /* input-box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19EC17E3BCB900FDBF62 /* input-box@2x.png */; };
+		888E1A0517E3BCB900FDBF62 /* verify-box@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E19ED17E3BCB900FDBF62 /* verify-box@2x.png */; };
+		888E1A0617E3BCB900FDBF62 /* KeyPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E19EF17E3BCB900FDBF62 /* KeyPadViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		888E1A0717E3BCB900FDBF62 /* KeyPadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888E19F017E3BCB900FDBF62 /* KeyPadViewController.xib */; };
+		888E1A0917E3C3A000FDBF62 /* CustomGestureViewController99.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888E1A0817E3C3A000FDBF62 /* CustomGestureViewController99.xib */; };
+		888E1A0E17E3CF3700FDBF62 /* back-arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E1A0A17E3CF3700FDBF62 /* back-arrow@2x.png */; };
+		888E1A0F17E3CF3700FDBF62 /* bottom-account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E1A0B17E3CF3700FDBF62 /* bottom-account@2x.png */; };
+		888E1A1017E3CF3700FDBF62 /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E1A0C17E3CF3700FDBF62 /* success@2x.png */; };
+		888E1A1117E3CF3700FDBF62 /* top-account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 888E1A0D17E3CF3700FDBF62 /* top-account@2x.png */; };
 		BF197FDA17E3759000B1A17E /* PaintingView.m in Sources */ = {isa = PBXBuildFile; fileRef = BF197FD917E3759000B1A17E /* PaintingView.m */; };
 		BF197FDC17E3776800B1A17E /* ArrowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF197FDB17E3776800B1A17E /* ArrowView.xib */; };
 		BF197FDF17E37B3A00B1A17E /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF197FDD17E37B3A00B1A17E /* GLKit.framework */; };
@@ -53,6 +81,37 @@
 		888E19CA17E388E000FDBF62 /* account-bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account-bg@2x.png"; sourceTree = "<group>"; };
 		888E19CB17E388E000FDBF62 /* account-bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "account-bg.png"; sourceTree = "<group>"; };
 		888E19CE17E3907500FDBF62 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg@2x.png"; sourceTree = "<group>"; };
+		888E19D617E3BCB900FDBF62 /* CheckmarkGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckmarkGestureRecognizer.h; sourceTree = "<group>"; };
+		888E19D717E3BCB900FDBF62 /* CheckmarkGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckmarkGestureRecognizer.m; sourceTree = "<group>"; };
+		888E19D817E3BCB900FDBF62 /* CustomGestureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGestureViewController.h; sourceTree = "<group>"; };
+		888E19D917E3BCB900FDBF62 /* CustomGestureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomGestureViewController.m; sourceTree = "<group>"; };
+		888E19DA17E3BCB900FDBF62 /* CustomGestureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomGestureViewController.xib; sourceTree = "<group>"; };
+		888E19DC17E3BCB900FDBF62 /* amount-drop-box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "amount-drop-box@2x.png"; sourceTree = "<group>"; };
+		888E19DD17E3BCB900FDBF62 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		888E19DE17E3BCB900FDBF62 /* check1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check1.png; sourceTree = "<group>"; };
+		888E19DF17E3BCB900FDBF62 /* check10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check10.png; sourceTree = "<group>"; };
+		888E19E017E3BCB900FDBF62 /* check11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check11.png; sourceTree = "<group>"; };
+		888E19E117E3BCB900FDBF62 /* check12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check12.png; sourceTree = "<group>"; };
+		888E19E217E3BCB900FDBF62 /* check13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check13.png; sourceTree = "<group>"; };
+		888E19E317E3BCB900FDBF62 /* check2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check2.png; sourceTree = "<group>"; };
+		888E19E417E3BCB900FDBF62 /* check3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check3.png; sourceTree = "<group>"; };
+		888E19E517E3BCB900FDBF62 /* check4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check4.png; sourceTree = "<group>"; };
+		888E19E617E3BCB900FDBF62 /* check5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check5.png; sourceTree = "<group>"; };
+		888E19E717E3BCB900FDBF62 /* check6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check6.png; sourceTree = "<group>"; };
+		888E19E817E3BCB900FDBF62 /* check7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check7.png; sourceTree = "<group>"; };
+		888E19E917E3BCB900FDBF62 /* check8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check8.png; sourceTree = "<group>"; };
+		888E19EA17E3BCB900FDBF62 /* check9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check9.png; sourceTree = "<group>"; };
+		888E19EB17E3BCB900FDBF62 /* dots@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dots@2x.png"; sourceTree = "<group>"; };
+		888E19EC17E3BCB900FDBF62 /* input-box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input-box@2x.png"; sourceTree = "<group>"; };
+		888E19ED17E3BCB900FDBF62 /* verify-box@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "verify-box@2x.png"; sourceTree = "<group>"; };
+		888E19EE17E3BCB900FDBF62 /* KeyPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyPadViewController.h; sourceTree = "<group>"; };
+		888E19EF17E3BCB900FDBF62 /* KeyPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyPadViewController.m; sourceTree = "<group>"; };
+		888E19F017E3BCB900FDBF62 /* KeyPadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyPadViewController.xib; sourceTree = "<group>"; };
+		888E1A0817E3C3A000FDBF62 /* CustomGestureViewController99.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomGestureViewController99.xib; sourceTree = "<group>"; };
+		888E1A0A17E3CF3700FDBF62 /* back-arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-arrow@2x.png"; sourceTree = "<group>"; };
+		888E1A0B17E3CF3700FDBF62 /* bottom-account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bottom-account@2x.png"; sourceTree = "<group>"; };
+		888E1A0C17E3CF3700FDBF62 /* success@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "success@2x.png"; sourceTree = "<group>"; };
+		888E1A0D17E3CF3700FDBF62 /* top-account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "top-account@2x.png"; sourceTree = "<group>"; };
 		BF197FD817E3759000B1A17E /* PaintingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingView.h; sourceTree = "<group>"; };
 		BF197FD917E3759000B1A17E /* PaintingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingView.m; sourceTree = "<group>"; };
 		BF197FDB17E3776800B1A17E /* ArrowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArrowView.xib; sourceTree = "<group>"; };
@@ -85,6 +144,16 @@
 		885FEEBC17E3551500B80413 = {
 			isa = PBXGroup;
 			children = (
+				888E19D617E3BCB900FDBF62 /* CheckmarkGestureRecognizer.h */,
+				888E19D717E3BCB900FDBF62 /* CheckmarkGestureRecognizer.m */,
+				888E1A0817E3C3A000FDBF62 /* CustomGestureViewController99.xib */,
+				888E19D817E3BCB900FDBF62 /* CustomGestureViewController.h */,
+				888E19D917E3BCB900FDBF62 /* CustomGestureViewController.m */,
+				888E19DA17E3BCB900FDBF62 /* CustomGestureViewController.xib */,
+				888E19DB17E3BCB900FDBF62 /* images */,
+				888E19EE17E3BCB900FDBF62 /* KeyPadViewController.h */,
+				888E19EF17E3BCB900FDBF62 /* KeyPadViewController.m */,
+				888E19F017E3BCB900FDBF62 /* KeyPadViewController.xib */,
 				BF197FE817E3A3E700B1A17E /* UIView+ImageCopy.h */,
 				BF197FE917E3A3E700B1A17E /* UIView+ImageCopy.m */,
 				BF197FD817E3759000B1A17E /* PaintingView.h */,
@@ -150,6 +219,35 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		888E19DB17E3BCB900FDBF62 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				888E1A0A17E3CF3700FDBF62 /* back-arrow@2x.png */,
+				888E1A0B17E3CF3700FDBF62 /* bottom-account@2x.png */,
+				888E1A0C17E3CF3700FDBF62 /* success@2x.png */,
+				888E1A0D17E3CF3700FDBF62 /* top-account@2x.png */,
+				888E19DC17E3BCB900FDBF62 /* amount-drop-box@2x.png */,
+				888E19DD17E3BCB900FDBF62 /* bg.png */,
+				888E19DE17E3BCB900FDBF62 /* check1.png */,
+				888E19DF17E3BCB900FDBF62 /* check10.png */,
+				888E19E017E3BCB900FDBF62 /* check11.png */,
+				888E19E117E3BCB900FDBF62 /* check12.png */,
+				888E19E217E3BCB900FDBF62 /* check13.png */,
+				888E19E317E3BCB900FDBF62 /* check2.png */,
+				888E19E417E3BCB900FDBF62 /* check3.png */,
+				888E19E517E3BCB900FDBF62 /* check4.png */,
+				888E19E617E3BCB900FDBF62 /* check5.png */,
+				888E19E717E3BCB900FDBF62 /* check6.png */,
+				888E19E817E3BCB900FDBF62 /* check7.png */,
+				888E19E917E3BCB900FDBF62 /* check8.png */,
+				888E19EA17E3BCB900FDBF62 /* check9.png */,
+				888E19EB17E3BCB900FDBF62 /* dots@2x.png */,
+				888E19EC17E3BCB900FDBF62 /* input-box@2x.png */,
+				888E19ED17E3BCB900FDBF62 /* verify-box@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -210,6 +308,31 @@
 				888E19CC17E388E000FDBF62 /* account-bg@2x.png in Resources */,
 				888E19CD17E388E000FDBF62 /* account-bg.png in Resources */,
 				888E19CF17E3907500FDBF62 /* bg@2x.png in Resources */,
+				888E19F317E3BCB900FDBF62 /* CustomGestureViewController.xib in Resources */,
+				888E19F417E3BCB900FDBF62 /* amount-drop-box@2x.png in Resources */,
+				888E19F517E3BCB900FDBF62 /* bg.png in Resources */,
+				888E19F617E3BCB900FDBF62 /* check1.png in Resources */,
+				888E19F717E3BCB900FDBF62 /* check10.png in Resources */,
+				888E19F817E3BCB900FDBF62 /* check11.png in Resources */,
+				888E19F917E3BCB900FDBF62 /* check12.png in Resources */,
+				888E19FA17E3BCB900FDBF62 /* check13.png in Resources */,
+				888E19FB17E3BCB900FDBF62 /* check2.png in Resources */,
+				888E19FC17E3BCB900FDBF62 /* check3.png in Resources */,
+				888E19FD17E3BCB900FDBF62 /* check4.png in Resources */,
+				888E19FE17E3BCB900FDBF62 /* check5.png in Resources */,
+				888E19FF17E3BCB900FDBF62 /* check6.png in Resources */,
+				888E1A0017E3BCB900FDBF62 /* check7.png in Resources */,
+				888E1A0117E3BCB900FDBF62 /* check8.png in Resources */,
+				888E1A0217E3BCB900FDBF62 /* check9.png in Resources */,
+				888E1A0317E3BCB900FDBF62 /* dots@2x.png in Resources */,
+				888E1A0417E3BCB900FDBF62 /* input-box@2x.png in Resources */,
+				888E1A0517E3BCB900FDBF62 /* verify-box@2x.png in Resources */,
+				888E1A0717E3BCB900FDBF62 /* KeyPadViewController.xib in Resources */,
+				888E1A0917E3C3A000FDBF62 /* CustomGestureViewController99.xib in Resources */,
+				888E1A0E17E3CF3700FDBF62 /* back-arrow@2x.png in Resources */,
+				888E1A0F17E3CF3700FDBF62 /* bottom-account@2x.png in Resources */,
+				888E1A1017E3CF3700FDBF62 /* success@2x.png in Resources */,
+				888E1A1117E3CF3700FDBF62 /* top-account@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +349,9 @@
 				888E199817E3613500FDBF62 /* AccountCell.m in Sources */,
 				BF197FDA17E3759000B1A17E /* PaintingView.m in Sources */,
 				BF197FEA17E3A3E700B1A17E /* UIView+ImageCopy.m in Sources */,
+				888E19F117E3BCB900FDBF62 /* CheckmarkGestureRecognizer.m in Sources */,
+				888E19F217E3BCB900FDBF62 /* CustomGestureViewController.m in Sources */,
+				888E1A0617E3BCB900FDBF62 /* KeyPadViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

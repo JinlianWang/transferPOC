@@ -10,9 +10,13 @@
 #import "AccountCell.h"
 #import "UIView+ImageCopy.h"
 #import <QuartzCore/QuartzCore.h>
+#import "CustomGestureViewController.h"
+#import "AppDelegate.h"
 
 
-@interface TransferViewController ()
+@interface TransferViewController () {
+    NSInteger count;
+}
 
 @property (nonatomic,strong) AccountCell *selectedTopCell;
 @property (nonatomic,strong) AccountCell *selectedBottomCell;
@@ -23,6 +27,7 @@
 @implementation TransferViewController
 static NSString *ACCell = @"ACCell";
 @synthesize topViewCell;
+@synthesize targetImage;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -45,6 +50,7 @@ static NSString *ACCell = @"ACCell";
     [self.topCollectionView setBackgroundColor:[UIColor clearColor]];
     [self.topCollectionView registerClass:[AccountCell class] forCellWithReuseIdentifier:ACCell];
     
+    count=0;
 }
 
 - (void)didReceiveMemoryWarning
@@ -80,13 +86,25 @@ static NSString *ACCell = @"ACCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     AccountCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ACCell forIndexPath:indexPath];
     
-    // Configure Cell
-    [cell.AccountName setText:@"CASH REWARDS"];
-    [cell.creditCard setText:@"...8523"];
-    [cell.accountAmount setText:@"$300.00"];
+    //initialize to use in the class
+    NSArray *listOfAccountNames;
+    NSArray *listOfAccountBalances;
+    NSArray *listOfAccountNums;
+    // in viewDidLoad
+    listOfAccountNames = [NSArray arrayWithObjects:@"CASH REWARDS",@"VENTURE REWARDS",@"PLATINUM CARD", @"360 CHECKING", @"360 SAVINGS", @"HIGH YIELD MONEY MARKET", nil];
+    listOfAccountBalances = [NSArray arrayWithObjects:@"$502.43",@"$5,000.00", @"$784.02", @"$910.31", @"$829.01", @"$1,324.15",nil];
+    listOfAccountNums = [NSArray arrayWithObjects:@"...2534", @"...8763", @"...2356", @"...0234", @"...8345", @"...2236",nil];
     
+    
+    //in cellForItemAtIndexPath
+    [cell.AccountName setText:[listOfAccountNames objectAtIndex:count]];
+    [cell.creditCard setText:[listOfAccountNums objectAtIndex:count]];
+    [cell.accountAmount setText:[listOfAccountBalances objectAtIndex:count]];
+    count++;
+    if(count == 6) {
+        count = 0;
+    }
     return cell;
-    
 }
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
@@ -94,7 +112,9 @@ static NSString *ACCell = @"ACCell";
     
 
     NSLog(@"didselect");
-    [[collectionView cellForItemAtIndexPath:indexPath] setBackgroundColor:[UIColor blueColor]];
+
+    [[collectionView cellForItemAtIndexPath:indexPath] setBackgroundColor:[UIColor colorWithRed:0.0/255.0 green:58.0/255.0 blue:111.0/255.0 alpha:1.0]];
+    
     [[collectionView cellForItemAtIndexPath:indexPath].backgroundView setTag:1];
 
  
@@ -107,19 +127,24 @@ static NSString *ACCell = @"ACCell";
         //CGRect desPos = [bottomCell frame];
         CGRect srcPos = [self.topViewCell convertRect:topViewCell.bounds toView:self.view];
         
-        self.imageCel=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"account-bg"]];
+        self.imageCel=[[UIImageView alloc] initWithImage:self.targetImage];
         [self.imageCel setFrame:srcPos];
         [self.view addSubview:self.imageCel];
         
         
-        [UIView animateWithDuration:1.0f delay:0.0f options:UIViewAnimationTransitionNone|UIViewAnimationOptionCurveLinear animations:^{
+        [UIView animateWithDuration:0.5f delay:0.0f options:UIViewAnimationTransitionNone|UIViewAnimationOptionCurveLinear animations:^{
             [self.imageCel setFrame:desPos];
         } completion:^(BOOL finished){
             [self.imageCel removeFromSuperview];
+            CustomGestureViewController *customController = [[CustomGestureViewController alloc] init];
+            AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+            [delegate.navController pushViewController:customController animated:YES];
         }];
         
     } else {
+        
         self.topViewCell = [collectionView cellForItemAtIndexPath:indexPath];
+        self.targetImage = [self.topViewCell cofImageContents];
     }
 
     

@@ -10,6 +10,7 @@
 #import "CheckmarkGestureRecognizer.h"
 #import "KeyPadViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import "AppDelegate.h"
 
 @implementation CustomGestureViewController
 @synthesize amountField;
@@ -77,11 +78,6 @@
     }
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return YES;
-}
 
 -(void)didRecognizeCheckmark:(UIGestureRecognizer*)gestureRecognizer
 {
@@ -114,6 +110,9 @@
     
 }
 
+- (NSUInteger)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskLandscapeRight;
+}
 -(void)stopCheckMarkAnimation:(NSTimer*)theTimer{
     [animationImageView stopAnimating];
         animationImageView.image = [UIImage imageNamed:@"check13.png"];
@@ -153,5 +152,10 @@
         self.amountField.text = @"$5034.23";
     }
     [self.dropdownView removeFromSuperview];
+}
+
+- (IBAction)goBack:(id)sender {
+    AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    [delegate.navController popToRootViewControllerAnimated:YES];
 }
 @end

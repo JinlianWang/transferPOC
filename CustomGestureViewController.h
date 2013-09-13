@@ -27,5 +27,6 @@
 @property (retain, nonatomic) IBOutlet UIView *dropdownView;
 
 - (IBAction)amountButtonTapped:(id)sender;
+- (IBAction)goBack:(id)sender;
 
 @end
