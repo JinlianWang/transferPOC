@@ -216,7 +216,6 @@
 						<string key="NSFrame">{{33, 287}, {369, 21}}</string>
 						<reference key="NSSuperview" ref="649974072"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<reference key="IBUIBackgroundColor" ref="539642065"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -348,7 +347,6 @@
 						<string key="NSFrame">{{673, 705}, {73, 44}}</string>
 						<reference key="NSSuperview" ref="145570610"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
@@ -769,6 +767,7 @@
 					<string key="superclassName">UIViewController</string>
 					<dictionary class="NSMutableDictionary" key="actions">
 						<string key="amountButtonTapped:">id</string>
+						<string key="goBack:">id</string>
 						<string key="openNumberPad:">id</string>
 						<string key="resetAction:">id</string>
 						<string key="showDropdown:">id</string>
@@ -776,6 +775,10 @@
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
 						<object class="IBActionInfo" key="amountButtonTapped:">
 							<string key="name">amountButtonTapped:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+						<object class="IBActionInfo" key="goBack:">
+							<string key="name">goBack:</string>
 							<string key="candidateClassName">id</string>
 						</object>
 						<object class="IBActionInfo" key="openNumberPad:">
