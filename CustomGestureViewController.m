@@ -11,6 +11,8 @@
 #import "KeyPadViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import "AppDelegate.h"
+#import "TransferViewController.h"
+
 
 @implementation CustomGestureViewController
 @synthesize amountField;
@@ -158,5 +160,7 @@
 - (IBAction)goBack:(id)sender {
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     [delegate.navController popToRootViewControllerAnimated:YES];
+    TransferViewController *transferController = (TransferViewController *)[delegate.navController topViewController];
+    transferController.successImage.hidden = NO;
 }
 @end
