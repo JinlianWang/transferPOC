@@ -162,5 +162,6 @@
     [delegate.navController popToRootViewControllerAnimated:YES];
     TransferViewController *transferController = (TransferViewController *)[delegate.navController topViewController];
     transferController.successImage.hidden = NO;
+    [transferController resetSelection];
 }
 @end

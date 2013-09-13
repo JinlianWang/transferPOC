@@ -164,6 +164,18 @@ static NSString *ACCell = @"ACCell";
     return UIEdgeInsetsMake(0.0, 10.0, 0.0, 10.0);
 }
 
-
+-(void)resetSelection{
+    NSArray *array = [self.collectionView visibleCells];
+    for(int i=0;i<[array count];i++){
+        UICollectionViewCell *cell = (UICollectionViewCell *)[array objectAtIndex:i];
+        [cell setBackgroundColor:[UIColor clearColor]];
+    }
+    
+    array = [self.topCollectionView visibleCells];
+    for(int i=0;i<[array count];i++){
+        UICollectionViewCell *cell = (UICollectionViewCell *)[array objectAtIndex:i];
+        [cell setBackgroundColor:[UIColor clearColor]];
+    }
+}
 
 @end

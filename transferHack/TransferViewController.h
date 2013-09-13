@@ -15,4 +15,7 @@
 @property (strong, nonatomic) UICollectionViewCell *topViewCell;
 @property (weak, nonatomic) IBOutlet UIImageView *successImage;
 @property (strong, nonatomic) UIImage *targetImage;
+
+-(void)resetSelection;
+
 @end
