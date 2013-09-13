@@ -52,7 +52,7 @@
 //        [self.accountAmount setTextAlignment:NSTextAlignmentCenter];
        
         [self.accountAmount setTextColor:[UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]];
-        [self.accountAmount setFont:[UIFont fontWithName:@"Helvetica" size:38.0]];
+        [self.accountAmount setFont:[UIFont fontWithName:@"Helvetica" size:33.0]];
         [self.accountAmount setAutoresizingMask:(UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin | UIViewAutoresizingFlexibleBottomMargin)];
         [self.contentView addSubview:self.accountAmount];
         

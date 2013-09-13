@@ -97,7 +97,7 @@ static NSString *ACCell = @"ACCell";
     NSArray *listOfAccountNums;
     // in viewDidLoad
     listOfAccountNames = [NSArray arrayWithObjects:@"CASH REWARDS",@"VENTURE REWARDS",@"PLATINUM CARD", @"360 CHECKING", @"360 SAVINGS", @"HIGH YIELD MONEY MARKET", nil];
-    listOfAccountBalances = [NSArray arrayWithObjects:@"$502.43",@"$5,000.00", @"$784.02", @"$910.31", @"$829.01", @"$1,324.15",nil];
+    listOfAccountBalances = [NSArray arrayWithObjects:@"$502.43",@"$5,034.23", @"$784.02", @"$10,142.23", @"$829.01", @"$1,324.15",nil];
     listOfAccountNums = [NSArray arrayWithObjects:@"...2534", @"...8763", @"...2356", @"...0234", @"...8345", @"...2236",nil];
     
     
