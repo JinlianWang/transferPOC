@@ -11,6 +11,6 @@
 @interface TransferViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UICollectionView *topCollectionView;
-
-
+@property (strong, nonatomic) UIImageView *imageCel;
+@property (strong, nonatomic) UICollectionViewCell *topViewCell;
 @end

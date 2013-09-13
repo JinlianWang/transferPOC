@@ -16,6 +16,7 @@
 
 @implementation TransferViewController
 static NSString *ACCell = @"ACCell";
+@synthesize topViewCell;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,6 +47,20 @@ static NSString *ACCell = @"ACCell";
 }
 
 
+
+-(void) moveImage
+{
+    //[image1 setCenter: CGPointMake(634, 126)];
+    CGPoint pointOne=CGPointMake(634, 126);
+    
+    self.imageCel.animationDuration = 5;
+    self.imageCel.center=pointOne;
+    
+    
+}
+
+
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 6;
 }
@@ -69,22 +84,38 @@ static NSString *ACCell = @"ACCell";
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+
     NSLog(@"didselect");
     [[collectionView cellForItemAtIndexPath:indexPath] setBackgroundColor:[UIColor blueColor]];
     [[collectionView cellForItemAtIndexPath:indexPath].backgroundView setTag:1];
- 
-}
 
--(void) moveImage
-{
- 
+    if(collectionView == self.collectionView){
+        NSLog(@"Selected Bottom");
+        
+        UICollectionViewCell *bottomCell = [collectionView cellForItemAtIndexPath:indexPath];
+        CGRect desPos = [bottomCell convertRect:bottomCell.bounds toView:self.view];
+        //CGRect desPos = [bottomCell frame];
+        CGRect srcPos = [self.topViewCell convertRect:topViewCell.bounds toView:self.view];
+        
+        self.imageCel=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"account-bg"]];
+        [self.imageCel setFrame:srcPos];
+        [self.view addSubview:self.imageCel];
+        
+        
+        [UIView animateWithDuration:3.0f delay:0.0f options:UIViewAnimationTransitionNone|UIViewAnimationOptionCurveLinear animations:^{
+            [self.imageCel setFrame:desPos];
+        } completion:^(BOOL finished){
+            [self.imageCel removeFromSuperview];
+        }];
+        
+    } else {
+        self.topViewCell = [collectionView cellForItemAtIndexPath:indexPath];
+    }
+
     
 }
 
--(void)collectionView:(UICollectionView *)collectionView diddeSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"didselect");
-}
 
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
