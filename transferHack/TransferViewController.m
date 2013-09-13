@@ -57,7 +57,7 @@ static NSString *ACCell = @"ACCell";
     AccountCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ACCell forIndexPath:indexPath];
     
     // Configure Cell
-    [cell.AccountName setText:@"Test Account"];
+    [cell.AccountName setText:@"CASH REWARDS"];
     [cell.creditCard setText:@"...8523"];
     [cell.accountAmount setText:@"$300.00"];
     
@@ -66,11 +66,13 @@ static NSString *ACCell = @"ACCell";
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(200.0, 200.0);
+    return CGSizeMake(233,203);
 }
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
     return UIEdgeInsetsMake(0.0, 10.0, 0.0, 10.0);
 }
+
+
 
 
 
