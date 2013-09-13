@@ -116,6 +116,7 @@
 -(void)stopCheckMarkAnimation:(NSTimer*)theTimer{
     [animationImageView stopAnimating];
         animationImageView.image = [UIImage imageNamed:@"check13.png"];
+    [self goBack:nil];
 }
 
 

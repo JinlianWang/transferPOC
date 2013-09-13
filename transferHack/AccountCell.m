@@ -46,10 +46,10 @@
         
         
         // Initialize Lable Credit Card
-        self.accountAmount = [[UILabel alloc] initWithFrame:CGRectMake(0, 150, 170, 40.0)];
+        self.accountAmount = [[UILabel alloc] initWithFrame:CGRectMake(10, 150, 170, 40.0)];
         // Configure Label Temp
         [self.accountAmount setBackgroundColor:[UIColor clearColor]];
-        [self.accountAmount setTextAlignment:NSTextAlignmentCenter];
+//        [self.accountAmount setTextAlignment:NSTextAlignmentCenter];
        
         [self.accountAmount setTextColor:[UIColor colorWithRed:51.0/255.0 green:51.0/255.0 blue:51.0/255.0 alpha:1.0]];
         [self.accountAmount setFont:[UIFont fontWithName:@"Helvetica" size:38.0]];

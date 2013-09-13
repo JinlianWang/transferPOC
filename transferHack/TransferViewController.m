@@ -53,6 +53,11 @@ static NSString *ACCell = @"ACCell";
     count=0;
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+  
+    
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
