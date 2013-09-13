@@ -16,6 +16,8 @@
 		885FEEDB17E3551500B80413 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 885FEEDA17E3551500B80413 /* Default.png */; };
 		885FEEDD17E3551500B80413 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885FEEDC17E3551500B80413 /* Default@2x.png */; };
 		885FEEDF17E3551500B80413 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885FEEDE17E3551500B80413 /* Default-568h@2x.png */; };
+		888E199417E3587F00FDBF62 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199217E3587F00FDBF62 /* TransferViewController.m */; };
+		888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888E199317E3587F00FDBF62 /* TransferViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		885FEEDA17E3551500B80413 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		885FEEDC17E3551500B80413 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		885FEEDE17E3551500B80413 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		888E199117E3587F00FDBF62 /* TransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
+		888E199217E3587F00FDBF62 /* TransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
+		888E199317E3587F00FDBF62 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,9 @@
 			isa = PBXGroup;
 			children = (
 				885FEED717E3551500B80413 /* AppDelegate.h */,
+				888E199117E3587F00FDBF62 /* TransferViewController.h */,
+				888E199217E3587F00FDBF62 /* TransferViewController.m */,
+				888E199317E3587F00FDBF62 /* TransferViewController.xib */,
 				885FEED817E3551500B80413 /* AppDelegate.m */,
 				885FEECF17E3551500B80413 /* Supporting Files */,
 			);
@@ -154,6 +162,7 @@
 				885FEEDB17E3551500B80413 /* Default.png in Resources */,
 				885FEEDD17E3551500B80413 /* Default@2x.png in Resources */,
 				885FEEDF17E3551500B80413 /* Default-568h@2x.png in Resources */,
+				888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +175,7 @@
 			files = (
 				885FEED517E3551500B80413 /* main.m in Sources */,
 				885FEED917E3551500B80413 /* AppDelegate.m in Sources */,
+				888E199417E3587F00FDBF62 /* TransferViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +292,7 @@
 				885FEEE417E3551500B80413 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
