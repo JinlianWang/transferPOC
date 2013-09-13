@@ -55,7 +55,14 @@ static NSString *ACCell = @"ACCell";
     AccountCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:ACCell forIndexPath:indexPath];
     
     // Configure Cell
-    [cell.AccountName setText:@"Test Account"];return cell;
+    [cell.AccountName setText:@"Test Account"];
+    [cell.creditCard setText:@"...8523"];
+    [cell.accountAmount setText:@"$300.00"];
+    
+    
+    
+    return cell;
+    
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {

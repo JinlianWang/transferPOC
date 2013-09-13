@@ -10,6 +10,7 @@
 
 @interface AccountCell : UICollectionViewCell
 @property (strong, nonatomic) UILabel *AccountName;
-
+@property (strong, nonatomic) UILabel *creditCard;
+@property (strong, nonatomic) UILabel *accountAmount;
 
 @end
