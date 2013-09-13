@@ -22,6 +22,7 @@
 
 @implementation TransferViewController
 static NSString *ACCell = @"ACCell";
+@synthesize topViewCell;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -53,6 +54,20 @@ static NSString *ACCell = @"ACCell";
 }
 
 
+
+-(void) moveImage
+{
+    //[image1 setCenter: CGPointMake(634, 126)];
+    CGPoint pointOne=CGPointMake(634, 126);
+    
+    self.imageCel.animationDuration = 5;
+    self.imageCel.center=pointOne;
+    
+    
+}
+
+
+
 -(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     return 6;
 }
@@ -76,57 +91,40 @@ static NSString *ACCell = @"ACCell";
 
 -(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+
     NSLog(@"didselect");
     [[collectionView cellForItemAtIndexPath:indexPath] setBackgroundColor:[UIColor blueColor]];
     [[collectionView cellForItemAtIndexPath:indexPath].backgroundView setTag:1];
-    self.selectedTopCell = (AccountCell*)[collectionView cellForItemAtIndexPath:indexPath];
-    [self moveImage];
+
  
-}
 
--(void) moveImage
-{
-    UIImage *sourceImage = [self.selectedTopCell cofImageContents];
-    self.overlay.contents = (id)sourceImage.CGImage;
-    CGRect topRect = CGRectMake(self.selectedTopCell.center.x - sourceImage.size.width/2, self.selectedTopCell.center.y - sourceImage.size.height/2, sourceImage.size.width, sourceImage.size.height);
-    CGImageRef topImage = CGImageCreateWithImageInRect(sourceImage.CGImage, topRect);
-    self.overlay.bounds = topRect;
-    self.overlay.contents = (__bridge id)topImage;
-    
-    CGFloat animDuration = 1.0f;
-    NSString *animName = @"moveAnim";
-    
-    [CATransaction begin];
-    {
-        [CATransaction setAnimationDuration:1.0f];
-        {
-            CABasicAnimation *frontFold = [CABasicAnimation
-                                           animationWithKeyPath:@"transform.translation.x"];
-            frontFold.duration = animDuration;
-            frontFold.fillMode = kCAFillModeForwards;
-            frontFold.fromValue = [NSNumber numberWithFloat:self.selectedTopCell.center.x];
-            frontFold.toValue = [NSNumber numberWithFloat:100.0f];
-            frontFold.removedOnCompletion = NO;
-            [self.overlay addAnimation:frontFold forKey:animName];
-            
-            CABasicAnimation *backFold = [CABasicAnimation
-                                          animationWithKeyPath:@"transform.translation.y"];
-            backFold.duration = animDuration;
-            backFold.fillMode = kCAFillModeForwards;
-            backFold.fromValue = [NSNumber numberWithFloat:self.selectedTopCell.center.x];
-            backFold.toValue = [NSNumber numberWithFloat:0.0f];
-            backFold.removedOnCompletion = NO;
-            [self.overlay addAnimation:backFold forKey:animName];
-        }
+    if(collectionView == self.collectionView){
+        NSLog(@"Selected Bottom");
+        
+        UICollectionViewCell *bottomCell = [collectionView cellForItemAtIndexPath:indexPath];
+        CGRect desPos = [bottomCell convertRect:bottomCell.bounds toView:self.view];
+        //CGRect desPos = [bottomCell frame];
+        CGRect srcPos = [self.topViewCell convertRect:topViewCell.bounds toView:self.view];
+        
+        self.imageCel=[[UIImageView alloc] initWithImage:[UIImage imageNamed:@"account-bg"]];
+        [self.imageCel setFrame:srcPos];
+        [self.view addSubview:self.imageCel];
+        
+        
+        [UIView animateWithDuration:1.0f delay:0.0f options:UIViewAnimationTransitionNone|UIViewAnimationOptionCurveLinear animations:^{
+            [self.imageCel setFrame:desPos];
+        } completion:^(BOOL finished){
+            [self.imageCel removeFromSuperview];
+        }];
+        
+    } else {
+        self.topViewCell = [collectionView cellForItemAtIndexPath:indexPath];
     }
-    [CATransaction commit];
+
     
 }
 
--(void)collectionView:(UICollectionView *)collectionView diddeSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"didselect");
-}
 
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
