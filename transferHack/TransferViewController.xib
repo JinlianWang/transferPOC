@@ -36,7 +36,7 @@
 				<reference key="NSNextResponder"/>
 				<int key="NSvFlags">292</int>
 				<array class="NSMutableArray" key="NSSubviews">
-					<object class="IBUICollectionView" id="837164398">
+					<object class="IBUICollectionView" id="1054179870">
 						<reference key="NSNextResponder" ref="766721923"/>
 						<int key="NSvFlags">274</int>
 						<array class="NSMutableArray" key="NSSubviews"/>
@@ -47,10 +47,14 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+						<bool key="IBUIPagingEnabled">YES</bool>
+						<bool key="IBUIShowsHorizontalScrollIndicator">NO</bool>
+						<bool key="IBUIShowsVerticalScrollIndicator">NO</bool>
 						<float key="IBUIMinimumZoomScale">0.0</float>
 						<float key="IBUIMaximumZoomScale">0.0</float>
-						<object class="IBUICollectionViewFlowLayout" key="IBUICollectionViewLayout" id="115493827">
-							<reference key="IBUICollectionView" ref="837164398"/>
+						<object class="IBUICollectionViewFlowLayout" key="IBUICollectionViewLayout" id="238395283">
+							<reference key="IBUICollectionView" ref="1054179870"/>
+							<int key="IBUIScrollDirection">1</int>
 							<string key="IBUIItemSize">{50, 50}</string>
 							<float key="IBUIMinimumLineSpacing">10</float>
 							<float key="IBUIMinimumInteritemSpacing">10</float>
@@ -61,6 +65,7 @@
 				<string key="NSFrame">{{0, 20}, {1024, 748}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
+				<reference key="NSNextKeyView" ref="1054179870"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -93,14 +98,14 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">collectionView</string>
 						<reference key="source" ref="841351856"/>
-						<reference key="destination" ref="837164398"/>
+						<reference key="destination" ref="1054179870"/>
 					</object>
-					<int key="connectionID">6</int>
+					<int key="connectionID">16</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">dataSource</string>
-						<reference key="source" ref="837164398"/>
+						<reference key="source" ref="1054179870"/>
 						<reference key="destination" ref="841351856"/>
 					</object>
 					<int key="connectionID">7</int>
@@ -108,7 +113,7 @@
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
-						<reference key="source" ref="837164398"/>
+						<reference key="source" ref="1054179870"/>
 						<reference key="destination" ref="841351856"/>
 					</object>
 					<int key="connectionID">8</int>
@@ -137,22 +142,22 @@
 						<int key="objectID">2</int>
 						<reference key="object" ref="766721923"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="837164398"/>
+							<reference ref="1054179870"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">4</int>
-						<reference key="object" ref="837164398"/>
+						<reference key="object" ref="1054179870"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="115493827"/>
+							<reference ref="238395283"/>
 						</array>
 						<reference key="parent" ref="766721923"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">5</int>
-						<reference key="object" ref="115493827"/>
-						<reference key="parent" ref="837164398"/>
+						<int key="objectID">10</int>
+						<reference key="object" ref="238395283"/>
+						<reference key="parent" ref="1054179870"/>
 					</object>
 				</array>
 			</object>
@@ -161,15 +166,15 @@
 				<string key="-1.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="-2.CustomClassName">UIResponder</string>
 				<string key="-2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+				<string key="10.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="2.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				<string key="4.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-				<string key="5.IBPluginDependency">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 			</dictionary>
 			<dictionary class="NSMutableDictionary" key="unlocalizedProperties"/>
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">8</int>
+			<int key="maxID">16</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">

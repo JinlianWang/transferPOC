@@ -18,6 +18,7 @@
 		885FEEDF17E3551500B80413 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 885FEEDE17E3551500B80413 /* Default-568h@2x.png */; };
 		888E199417E3587F00FDBF62 /* TransferViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199217E3587F00FDBF62 /* TransferViewController.m */; };
 		888E199517E3587F00FDBF62 /* TransferViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 888E199317E3587F00FDBF62 /* TransferViewController.xib */; };
+		888E199817E3613500FDBF62 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 888E199717E3613500FDBF62 /* AccountCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		888E199117E3587F00FDBF62 /* TransferViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferViewController.h; sourceTree = "<group>"; };
 		888E199217E3587F00FDBF62 /* TransferViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransferViewController.m; sourceTree = "<group>"; };
 		888E199317E3587F00FDBF62 /* TransferViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TransferViewController.xib; sourceTree = "<group>"; };
+		888E199617E3613500FDBF62 /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
+		888E199717E3613500FDBF62 /* AccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				885FEED717E3551500B80413 /* AppDelegate.h */,
 				888E199117E3587F00FDBF62 /* TransferViewController.h */,
 				888E199217E3587F00FDBF62 /* TransferViewController.m */,
+				888E199617E3613500FDBF62 /* AccountCell.h */,
+				888E199717E3613500FDBF62 /* AccountCell.m */,
 				888E199317E3587F00FDBF62 /* TransferViewController.xib */,
 				885FEED817E3551500B80413 /* AppDelegate.m */,
 				885FEECF17E3551500B80413 /* Supporting Files */,
@@ -176,6 +181,7 @@
 				885FEED517E3551500B80413 /* main.m in Sources */,
 				885FEED917E3551500B80413 /* AppDelegate.m in Sources */,
 				888E199417E3587F00FDBF62 /* TransferViewController.m in Sources */,
+				888E199817E3613500FDBF62 /* AccountCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
