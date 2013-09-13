@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface UIView (ImageCopy)
--(UIImage *)bnrImageContents;
+-(UIImage *)cofImageContents;
 @end

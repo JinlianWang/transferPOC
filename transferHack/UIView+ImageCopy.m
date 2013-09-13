@@ -10,7 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation UIView (ImageCopy)
--(UIImage *)bnrImageContents
+-(UIImage *)cofImageContents
 {
     CGSize mySize = self.bounds.size;
     UIGraphicsBeginImageContext(mySize);
