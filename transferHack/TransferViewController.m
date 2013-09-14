@@ -117,6 +117,7 @@ static NSString *ACCell = @"ACCell";
     
 
     NSLog(@"didselect");
+    [self resetSelection];
 
     [[collectionView cellForItemAtIndexPath:indexPath] setBackgroundColor:[UIColor colorWithRed:0.0/255.0 green:58.0/255.0 blue:111.0/255.0 alpha:1.0]];
     
